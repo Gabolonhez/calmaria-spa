@@ -85,3 +85,7 @@
         @include mixins.ff-fs-color(variables.$font-text, 1.0rem, variables.$mainly-color);
     }
 }
+
+fieldset {
+    border: none;
+}

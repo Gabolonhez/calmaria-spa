@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
     <main>
         <header>
             <nav>
-                <img src="./assets/logo.png" alt="logo">
+                <img src="./assets/logo.png" alt="logo da calmaria spa">
                 <span class="linha"></span>
                 <ul>
                     <li><a href="#nosso-espaco">Nosso espaço</a></li>
@@ -24,7 +24,6 @@
                     <li><a href="#contatos">Contato</a></li>
                 </ul>
             </nav>
-            
             <section id="home">
                 <div class="textos-home">
                     <h1>Boas-vindas ao seu refúgio de <span> paz e bem-estar</span></h1>
@@ -46,7 +45,7 @@
                     <p class="infos">Oferecemos equipamentos de ponta, produtos certificados e uma equipe de
                         profissionais ultra qualificados para dissipar seu estresse e ajudar você na busca por
                         equilíbrio e tranquilidade.</p>
-                    <img class="separador" src="./assets/separador-direita.svg" alt="separador de seções">
+                    <img aria-hidden="true" class="separador" src="./assets/separador-direita.svg" alt="separador de seções">
                 </div>
             </div>
             <div class="detalhes">
@@ -60,7 +59,7 @@
                     <p class="infos">No Calmaria Spa cada visita é uma jornada revigorante para mais serenidade e
                         disposição! Independente da sua rotina, vamos ajudar você a encontrar seu paraíso
                         particular.</p>
-                    <img class="separador" src="./assets/separador-esquerda.svg" alt="separador de seções">
+                    <img aria-hidden="true" class="separador" src="./assets/separador-esquerda.svg" alt="separador de seções">
                 </div>
             </div>
         </section>
@@ -73,17 +72,14 @@
                     <img src="./assets/Soft Star.png" alt="soft star">
                     <p class="card-texto">Relaxantes, terapêuticas, desportivas e drenagens. Conte com nossos
                         terapeutas especializados para aliviar suas tensões, tratar dores e retenção de líquido
-                        através
-                        dessa técnica milenar tão eficiente para o organismo humano.</p>
+                        através dessa técnica milenar tão eficiente para o organismo humano.</p>
                 </div>
                 <div class="card">
                     <img src="./assets/icon-tratamentos.png" alt="Icone de tratamento com figura de uma banheira">
                     <h3 class="card-titulo">Tratamentos Corporais</h3>
                     <img src="./assets/Soft Star.png" alt="soft star">
-                    <p class="card-texto">Tratamos sua pele com gentileza através de esfoliações corporais suaves,
-                        hidratações profundas do corpo e do rosto, além de limpeza facial. Você também pode
-                        desfrutar de
-                        banhos revigorantes de sais.</p>
+                    <p class="card-texto">Tratamos sua pele com gentileza através de esfoliações <span lang "en">peelings</span> corporais suaves,
+                        hidratações profundas do corpo e do rosto, além de limpeza facial. Você também pode desfrutar de banhos revigorantes de sais.</p>
                 </div>
                 <div class="card">
                     <img src="./assets/icon-dias-especiais.png" alt="Icone de Dias especiais com figura de produtos">
@@ -110,19 +106,18 @@
         </section>
         <section id="contatos">
             <div class="contatos-imgs">
-                <img src="./assets/contato-img-1.png" alt="Homem deitado em banheira">
+                <img src="./assets/contato-img-1.png" alt="Homem deitado em banheira com produto de spa no rosto">
                 <img src="./assets/contato-img-2.png" alt="Mulher olhando para o horizonte dentro de uma banheira">
                 <img src="./assets/contato-img-3.png"
                     alt="Visão superior de um livro nas mãos de uma pessoa dentro de uma banheira">
             </div>
             <div class="contatos-form">
-                <h4 class="titulo">Entre em contato</h4>
-                <p class="infos">Reserve seu horário, tire dúvidas ou proponha sugestões, nosso canal é aberto para
-                    você!</p>
+                <h4 id="title-contact" class="titulo">Entre em contato</h4>
+                <p class="infos">Reserve seu horário, tire dúvidas ou proponha sugestões, nosso canal é aberto para você!</p>
                 <form class="inputs">
                     <div class="form-group">
                         <label for="nomeContato">Nome</label>
-                        <input type="text" id="nomeContato" placeholder="Digite nome completo">
+                        <input type="text" id="nomeContato" placeholder="Digite seu nome completo">
                     </div>
                     <div class="form-group">
                         <label for="emailContato">Email</label>
@@ -130,28 +125,30 @@
                     </div>
                     <div class="form-group">
                         <label for="telefoneContato">Telefone</label>
-                        <input type="text" id="telefoneContato" placeholder="(xx) xxxxx-xxxx">
+                        <input type="text" id="telefoneContato" placeholder="(xx) xxxxx-xxxx" required>
                     </div>
                     <div>
-                        <p class="form-group-title">Prefere contato por:</p>
+                    <fieldset aria-labelledby="title-contact">
+                        <legend class="form-group-title">Prefere contato por</legend>
                     <div class="form-group-radio">
                         <div>
-                            <input type="radio">
-                            <label>Ligação</label>
+                            <input type="radio" id="ligacao" name="contact" required>
+                            <label for="ligacao">Ligação</label>
                         </div>
                         <div>
-                            <input type="radio">
-                            <label>WhatsApp</label>
+                            <input type="radio" id="whatsapp" name="contact" required>
+                            <label for="whatsapp">WhatsApp</label>
                         </div>
                         <div>
-                            <input type="radio">
-                            <label>E-mail</label>
+                            <input type="radio" id="email-contact" name="contact" required>
+                            <label for="email-contact">E-mail</label>
                         </div>
                     </div>
                     </div>
                     <div class="form-group">
+                    </fieldset>
                         <label for="mensagemContato">Mensagem</label>
-                        <textarea type="text" id="mensagemContato" placeholder="Escreva sua mensagem"></textarea>
+                        <textarea type="text" id="mensagemContato" placeholder="Escreva sua mensagem" maxlength="500"></textarea>
                     </div>
                     <button class="btn">Enviar</button>
                 </form>
@@ -159,15 +156,17 @@
         </section>
         <footer>
             <div class="rodape">
+                <address>
                 <p class="rodape__title">Acesse nossas redes:</p>
-                <div class="rodape__nav--lista">
-                    <div><a href="#" class="rodape__nav--lista--whatsapp"></a></div>
-                    <div><a href="#" class="rodape__nav--lista--instagram"></a></div>
-                    <div><a href="#" class="rodape__nav--lista--tiktok"></a></div>
+                <ul class="rodape__nav--lista">
+                    <li><a aria-label="WhatsApp calmaria spa" href="#" class="rodape__nav--lista--whatsapp"></a></li>
+                    <li><a aria-label="Instagram calmaria sap" href="#" class="rodape__nav--lista--instagram"></a></li>
+                    <li><a aria-label="Tiktok calmaria spa" href="#" class="rodape__nav--lista--tiktok"></a></li>
                 </div>
             <div class="footer__alura">
                 <small>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</small>
             </div>
+            </address>
         </footer>
     </main>
 </body>

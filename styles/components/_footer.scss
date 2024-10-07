@@ -1,7 +1,7 @@
 @use '../abstract/variables';
 @use '../abstract/mixins';
 
-.footer__alura{
+.footer__alura {
     background: variables.$quartenary-color;
     padding: 2rem;
     text-align: center;
@@ -10,6 +10,9 @@
 
 .rodape {
     background: variables.$mainly-gradient;
+}
+.rodape li {
+    list-style-type: none;
 }
 .rodape .rodape__nav--lista  {
     display: flex;

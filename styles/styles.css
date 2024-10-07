@@ -1,3 +1,7 @@
+object:focus {
+  border: 2px solid red;
+}
+
 header {
   background: linear-gradient(#E8F5C8, #FFFFFF);
   padding: 2rem;
@@ -288,6 +292,10 @@ header .img-home img {
   color: #0C0421;
 }
 
+fieldset {
+  border: none;
+}
+
 .footer__alura {
   background: #E8F5C8;
   padding: 2rem;
@@ -300,6 +308,10 @@ header .img-home img {
 
 .rodape {
   background: linear-gradient(#E8F5C8, #FFFFFF);
+}
+
+.rodape li {
+  list-style-type: none;
 }
 
 .rodape .rodape__nav--lista {
