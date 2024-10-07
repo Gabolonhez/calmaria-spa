@@ -1,0 +1,92 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+header {
+    background: variables.$mainly-gradient;
+    padding: 2rem;
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+
+        .linha {
+            border-top: 1px solid black;
+            width: 80%;
+        }
+        ul {
+            display: inline-flex;
+            gap: 2rem;
+
+            li {
+                list-style-type: none;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: variables.$font-size;
+                @include mixins.ff-fs-color(variables.$font-text, 1rem, variables.$mainly-color);
+                font-weight: 500;
+                transition: .3s;
+                &:hover{
+                    transform: scale(1.2);
+                    font-weight: 700;
+            }
+        }
+    }
+}
+    #home {
+        max-width: 1040px;
+        @include mixins.margem-central(80%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .textos-home {
+            max-width: 464px;
+            h1 {
+                font-size: 4.2rem;
+                color: variables.$mainly-color;
+                margin-bottom: 2rem;
+                font-family: variables.$font-title;
+                span {
+                    color: variables.$secondary-color;
+                }
+            }
+        }
+        .btn-main {
+            width: 280px;
+            height: 66px;
+            background: #4E75FF;
+            border: none;
+            outline: none;
+            border-radius: 66px;
+            color: variables.$white-color;
+            font-family: variables.$font-text;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .btn-main:hover {
+            background: variables.$mainly-color;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    }
+    ul {
+        display: inline-flex;
+        gap: 2rem;
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            @include mixins.ff-fs-color(variables.$font-text, 1rem, variables.$mainly-color);
+            font-weight: 500;
+        }
+    }
+    .img-home {
+        max-width: 474px;
+        img {
+            width: 100%;
+        }
+    }
+}

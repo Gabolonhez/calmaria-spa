@@ -1,0 +1,38 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.footer__alura{
+    background: variables.$quartenary-color;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;;    @include mixins.ff-fs-color(variables.$font-text, 1rem, variables.$mainly-color);
+}
+
+.rodape {
+    background: variables.$mainly-gradient;
+}
+.rodape .rodape__nav--lista  {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 1.5rem 0;
+}
+
+.rodape__title {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 1.5rem 0; 
+    @include mixins.ff-fs-color(variables.$font-text, 1rem, variables.$mainly-color);
+    font-weight: bold;
+}
+
+.rodape .rodape__nav--lista .rodape__nav--lista--whatsapp::before {
+    content: url("../assets/whatsapp.svg")
+}
+.rodape .rodape__nav--lista .rodape__nav--lista--instagram::before {
+    content: url("../assets/instragam.svg")
+}
+.rodape .rodape__nav--lista .rodape__nav--lista--tiktok::before {
+    content: url("../assets/tiktok.svg")
+}
