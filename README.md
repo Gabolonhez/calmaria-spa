@@ -6,13 +6,11 @@ Uma aplicação para manipulação de elementos interativos como menu com submen
 
 ![screenshot da aplicação](./screenshot-calmaria-spa.png)
 
-## 🔨 Funcionalidades do projeto
+## 🔨 Funcionalidades 
 
 O App é uma página onde até o momento todos os elementos são somente visuais. Nela possui um menu de navegação com submenu, modal para se inscrever e ganhar desconto, modal para entrar em contato e um acordeão com as perguntas mais frequentes, todos estes elementos serão interativos utilizando JavaScript.
 
-## ✔️ Técnicas e tecnologias utilizadas
-
-Durante esse curso utilizaremos:
+## ✔️ Tecnologias
 
 - `Figma`
 - `JavaScript`
