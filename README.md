@@ -1,4 +1,4 @@
-![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
+![](https://img.shields.io/github/license/)
 
 # Calmaria Spa
 
