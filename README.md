@@ -2,9 +2,9 @@
 
 # Calmaria Spa
 
-Uma aplicação para manipulação de elementos interativos como menu com submenus, modais e acordeão com foco em acessibilidade.
+Site responsivo e com um design moderno da calmaria spa, para manipulação de elementos interativos como menu com submenus, modais e acordeão com foco em acessibilidade.
 
-![screenshot da aplicação](./screenshot-calmaria-spa.png)
+![image](https://github.com/user-attachments/assets/c72265ff-fef0-42b5-a3d7-0dca3ac5b6df)
 
 ## 🔨 Funcionalidades 
 
