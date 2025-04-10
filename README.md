@@ -6,7 +6,7 @@
 
 ## 📑 Descrição
 
-Site responsivo e com um design moderno da calmaria spa, para manipulação de elementos interativos como menu com submenus, modais e acordeão com foco em acessibilidade.
+Site responsivo de um spa.
 
 ## 🔨 Funcionalidades 
 
